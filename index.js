@@ -1,27 +1,31 @@
-class NormalArray {
+export class NormalArray {
     constructor() {
         this.length = 0;
         this.data = [];
     }
+    // Get value by index
     Get(index) {
         return this.data[index];
     }
+    // Push value to the end of array
     Push(item) {
         if (item) {
             this.data.push(item);
             this.length++;
         }
     }
+    // Print array
     Print() {
         console.log(this.data);
     }
-
+    // Replace attribute a with b
     ReplaceAttribute(a, b) {
         for (let i = 0; i < this.data.length; i++) {
             this.data[i][b] = this.data[i][a];
             delete this.data[i][a];
         }
     }
+    // Sort by attribute
     Sort(attr) {
         let flag = true;
         let attrArray = [];
@@ -41,6 +45,7 @@ class NormalArray {
             return true;
         }
     };
+    // Sort by attribute and order
     Sort(attr, order) {
         let flag = true;
         let attrArray = [];
@@ -68,8 +73,8 @@ class NormalArray {
         }
     }
 }
-export default {
-    NormalArray
-}
+// export default {
+//     NormalArray
+// }
 
 
