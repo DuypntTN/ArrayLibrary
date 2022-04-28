@@ -68,7 +68,7 @@ class Array {
         }
     }
 }
-module.exports = {
+export default {
     Array
 }
 
