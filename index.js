@@ -15,6 +15,7 @@ class Array {
     print() {
         console.log(this.data);
     }
+
     replaceAtrribute(a, b) {
         for (let i = 0; i < this.data.length; i++) {
             this.data[i][b] = this.data[i][a];
@@ -67,7 +68,8 @@ class Array {
         }
     }
 }
-
-
+module.exports = {
+    Array
+}
 
 
