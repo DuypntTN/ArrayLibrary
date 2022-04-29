@@ -1,4 +1,4 @@
-export class NormalArray {
+exports.NormalArray = class NormalArray {
     constructor() {
         this.length = 0;
         this.data = [];
@@ -73,8 +73,5 @@ export class NormalArray {
         }
     }
 }
-// export default {
-//     NormalArray
-// }
 
 
